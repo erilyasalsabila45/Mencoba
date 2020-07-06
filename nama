@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>"/>
+        <style>
+            body{
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="margin-top:0px"> Nama Lengkap </h2>
+        <form action="<?php echo $action; ?>" method="post">
+	   <div class="form-group">
+            <label for="int">Nama Lengkap <?php echo form_error('nama_barang') ?></label>
+            <input type="text" class="form-control" name="nama_barang" id="nama_barang" placeholder="Nama Barang" value="<?php echo $nama_barang; ?>" />
+        </div>
+        <div>
+          <div class="form-group">
+            <label for="int">NIM  <?php echo form_error('kode') ?></label>
+            <input type="text" class="form-control" name="kode" id="kode" placeholder="Kode" value="<?php echo $kode; ?>" />
+        </div>
+        <div>
+          <div class="form-group">
+            <label for="int">Kelompok <?php echo form_error('satuan') ?></label>
+            <input type="text" class="form-control" name="satuan" id="satuan" placeholder="Satuan" value="<?php echo $satuan; ?>" />
+        </div>
+
+        <!--<div class="form-group">
+            <label for="varchar">Alamat Kirim <?php echo form_error('kirim') ?></label>
+            <input type="text" class="form-control" name="kirim" id="kirim" placeholder="Kirim Ke" value="<?php echo $kirim; ?>" />
+        </div>-->
+	    <input type="hidden" name="id_barang" value="<?php echo $id_barang; ?>" /> 
+	    <button type="submit" class="btn btn-primary"><?php echo $button ?></button> 
+	    <a href="<?php echo site_url('barang') ?>" class="btn btn-default">Cancel</a>
+	</form>
+    </body>
+</html>
+
+
+
+
+
+
+
+Nama : Erilya Salsabila
+NIM  : A11.2017.10499
+Kelompok : A11.4606
+Ujian Akhir Semester 
+Proyek Perangkal Lunak 
